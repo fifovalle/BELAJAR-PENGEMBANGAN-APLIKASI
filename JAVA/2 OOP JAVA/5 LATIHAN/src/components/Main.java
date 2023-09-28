@@ -16,6 +16,26 @@ class Pemain {
     }
 
     // METHOD PEMAIN
+    void serang(Pemain musuh) {
+        double kekuatanSerangan = this.senjata.kekuatanSerangan;
+        System.out.println(this.nama + " menyerang " + musuh.nama + " dengan kekuatan serangan " + kekuatanSerangan);
+
+        musuh.bertahan(kekuatanSerangan);
+    }
+
+    void bertahan(double kekuatanSerangan) {
+
+        double sakitnya;
+        if (this.jirah.kekuatanBertahan < kekuatanSerangan) {
+            sakitnya = kekuatanSerangan - this.jirah.kekuatanBertahan;
+        } else {
+            sakitnya = 0;
+        }
+        this.darah -= sakitnya;
+        System.out.println(this.nama + "mendapatkan serangan " + sakitnya);
+
+    }
+
     void gunakanSenjata(Senjata senjata) {
         this.senjata = senjata;
     }
@@ -84,5 +104,9 @@ public class Main {
         yusuf.gunakanSenjata(ketapel);
         yusuf.gunakanJirah(kain);
         yusuf.tampilPemain();
+
+        System.out.println("\n PERTEMPURAN");
+        naufal.serang(yusuf);
+        naufal.tampilPemain();
     }
 }
