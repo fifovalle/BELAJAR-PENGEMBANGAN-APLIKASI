@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/halo1"
+        android:text="Halo Dunia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/halo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/halo1"
+        android:layout_marginTop="51dp"
+        android:text="Halo Dunia2" />
+
+    <TextView
+        android:layout_below="@id/halo2"
+        android:id="@+id/textkiri"
+        android:text="ini adalah teks kiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textkanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/halo2"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/textkiri"
+        android:text="ini adalah teks kanan" />
+
+
+</RelativeLayout>
