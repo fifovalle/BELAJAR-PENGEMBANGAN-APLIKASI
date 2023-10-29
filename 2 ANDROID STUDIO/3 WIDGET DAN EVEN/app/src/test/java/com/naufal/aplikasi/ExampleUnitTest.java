@@ -1,4 +1,4 @@
-package com.naufal.widgeteven;
+package com.naufal.aplikasi;
 
 import org.junit.Test;
 

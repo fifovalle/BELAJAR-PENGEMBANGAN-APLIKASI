@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace 'com.naufal.widgeteven'
-    compileSdk 33
+    namespace 'com.naufal.aplikasi'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.naufal.widgeteven"
+        applicationId "com.naufal.aplikasi"
         minSdk 26
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

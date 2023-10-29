@@ -8,18 +8,50 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Angka 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Masukan Angka 1"
+            android:id="@+id/angka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
     <TextView
-        android:text="Tampil kata dari input"
-        android:id="@+id/judul"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Angka 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Masukan Angka 2"
+            android:id="@+id/angka2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:text="Hasil : "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <EditText
-        android:hint="Masukan Kata"
-        android:id="@+id/input"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/hitung"
+        android:text="Hitung"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-
-
 </LinearLayout>
